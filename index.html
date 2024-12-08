@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St Mary's College Complaint Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>St Mary's College Complaint Management System</h1>
+        <div id="userInfo"></div>
+        <form id="complaintForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="AIML">AIML</option>
+                <option value="CSE">CSE</option>
+                <option value="AIDS">AIDS</option>
+            </select>
+            <textarea id="complaint" placeholder="Describe your complaint" required></textarea>
+            <p>All complaints will be sent to: <strong>hod_aiml@stmarys.com</strong></p>
+            <button type="submit">Submit Complaint</button>
+        </form>
+        <div id="complaintList">
+            <h2>Recent Complaints</h2>
+            <ul id="complaints"></ul>
+        </div>
+        <button id="logoutButton" style="display: none;">Log Out</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

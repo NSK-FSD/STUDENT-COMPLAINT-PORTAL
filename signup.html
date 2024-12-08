@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - St Mary's College Complaint Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <input type="text" id="name" placeholder="Your Name" required><br>
+            <input type="email" id="email" placeholder="Your Email" required><br>
+            <input type="password" id="password" placeholder="Password" required><br>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required><br>
+            <select id="department" required>
+                <option value="">Select Department</option>
+                <option value="AIML">AIML</option>
+                <option value="CSE">CSE</option>
+                <option value="AIDS">AIDS</option>
+            </select><br>
+            <br><button type="submit">Sign Up</button>
+        </form><br>
+        <p>Already have an account? <a href="login.html">Log in</a></p>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>
